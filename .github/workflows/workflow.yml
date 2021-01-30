@@ -31,7 +31,7 @@ jobs:
         git init
         git config user.name  "CI"
         git config user.email "flutter-ci@github.com"
-        git remote add secure-origin https://${{ secrets.71d68e9114acbadafc91299d555223052c816521 }}@github.com/[steviehines]/[iknoweverything].git
+        git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/[steviehines]/[iknoweverything].git
         git checkout -b gh-pages
         git add .
         git commit -m "Updated docs"
